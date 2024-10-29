@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo-pc {
+  width: 80px; /* Ajusta el tamaño */
+  padding: 5px;
+}
+
+body {
+  background-color: slategrey;
+  
+}
+
+.frase-inicio {
+  margin-top: 2%;
+  margin-bottom: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+ul li {
+  list-style: none;
+  border: solid black 1px;
+  color: black;
+}
+
+
+
+.subtitulo-prod{
+    background-color:rgb(77, 175, 11);
+    border: solid black;
+}
+
+
+
+.fondo-articulo {
+  background-color:black; 
+  border-radius: 8px; 
+}
+
+.fondo-articulo:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.btn-prod {
+  background-color: #333;
+  border: none;
+  color: whitesmoke;
+
+}
+
+
+.btn-dark:hover {
+    background-color: #279b3a; /* Color del botón al pasar el mouse */
+}
+
+.img-prod {
+
+  width: 50%;           /* La imagen ocupa el 50% de ancho del contenedor */
+    height: 250px;        /* Todas las imagenes de los productos tienen una altura fija de 250px*/
+    object-fit: cover;    /* Se recortan las imagenes por igual*/
+    margin: 0 auto;       /* Centra la imagen en su contenedor */
+
+}
+
+.beneficios {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.contenedor-ayuda{
+  border: solid black;
+}
+
+
+.div-preg-frec ul {
+  background-color: white;
+}
+ 
+.imagen-ayuda {
+  max-height: 400px;
+}
+
+.titulo-tienda {
+  background-color:rgb(77, 175, 11);
+  border: solid black;
+}
+
+.seccion-tienda {
+  background-color:white;
+  border: solid black;
+}
+
+
+
+
+.productos-tienda {
+   width: 50%;         
+   height: 250px;    
+   object-fit: cover;
+   margin: 0 auto;   
+}
+
+.fondo-nosotros {
+  width: 100%;
+  max-height: 450px;
+  margin-bottom: 12px;
+
+}
+
+
+footer {
+    border-top: solid;
+    background-color:rgb(77, 175, 11);
+    
+}
