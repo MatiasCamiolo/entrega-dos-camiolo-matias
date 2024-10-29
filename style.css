@@ -38,19 +38,12 @@ ul li {
 
 .fondo-articulo {
   background-color:black; 
-  border-radius: 8px; 
 }
 
 .fondo-articulo:hover {
   transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
 }
 
-.btn-prod {
-  background-color: #333;
-  border: none;
-  color: whitesmoke;
-
-}
 
 
 .btn-dark:hover {
@@ -59,8 +52,8 @@ ul li {
 
 .img-prod {
 
-  width: 50%;           /* La imagen ocupa el 50% de ancho del contenedor */
-    height: 250px;        /* Todas las imagenes de los productos tienen una altura fija de 250px*/
+    width: 40%;           /* La imagen ocupa el 50% de ancho del contenedor */
+    height: 300px;        /* Todas las imagenes de los productos tienen una altura fija de 250px*/
     object-fit: cover;    /* Se recortan las imagenes por igual*/
     margin: 0 auto;       /* Centra la imagen en su contenedor */
 
@@ -90,15 +83,17 @@ ul li {
 }
 
 .seccion-tienda {
-  background-color:white;
+  background-color:black;
   border: solid black;
 }
 
-
+.div-de-cada-articulo {
+  color: white;
+}
 
 
 .productos-tienda {
-   width: 50%;         
+   width: 45%;         
    height: 250px;    
    object-fit: cover;
    margin: 0 auto;   
@@ -110,6 +105,7 @@ ul li {
   margin-bottom: 12px;
 
 }
+
 
 
 footer {
