@@ -48,6 +48,7 @@ ul li {
 
 .btn-dark:hover {
     background-color: #279b3a; /* Color del botón al pasar el mouse */
+    transform: scale(1.05);
 }
 
 .img-prod {
