@@ -64,10 +64,14 @@ ul li {
 
 }
 
-.beneficios {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+.beneficios-section {
+  border: solid  black;
+  background-color:rgb(77, 175, 11);
+  margin-bottom: 30px;
 }
+
+
+
 
 .contenedor-ayuda{
   border: solid black;
