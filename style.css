@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.navbar-toggler-icon {
+  background-color: white !important;
+}
+
 .logo-pc {
   width: 80px; /* Ajusta el tamaño */
   padding: 5px;
