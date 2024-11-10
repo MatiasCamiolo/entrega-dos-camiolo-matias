@@ -4,13 +4,74 @@
   box-sizing: border-box;
 }
 
+css
 
-h2{
-  border: solid black 2px;
-  background-color:rgb(77, 175, 11) ;
-  color: black;
+Verify
+
+Open In Editor
+Edit
+Copy code
+/* Estilo para el header */
+header {
+  background-color: #343a40; /* Color de fondo oscuro */
+  padding: 10px 0; /* Espaciado superior e inferior */
 }
 
+/* Estilo para la barra de navegación */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+/* Estilo para el ul (lista de navegación) */
+.navbar-nav {
+  margin-left: auto; /* Alinear la lista a la derecha */
+}
+
+/* Estilo para los elementos de la lista */
+.nav-item {
+  margin: 0 15px; /* Espaciado horizontal entre los elementos */
+}
+
+/* Estilo para los enlaces de navegación */
+
+.nav-link {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #343a40;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: green;
+  color: #343a40;
+}
+
+/* Color para el enlace activo */
+.nav-link.active {
+  color: #343a40; /* Color de texto para el enlace activo */
+}
+
+.dropdown-menu {
+  background-color: green;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.103);
+}
+
+h2 {
+  border: solid black 2px;
+  background-color: rgb(77, 175, 11);
+  color: black;
+}
 
 .navbar-toggler-icon {
   background-color: white !important;
@@ -25,10 +86,15 @@ body {
   background-color: slategrey;
 }
 
+.beneficios-section {
+  border: solid black;
+  background-color: rgb(77, 175, 11);
+  margin-bottom: 30px;
+}
 
 ul li {
   list-style: none;
-  border: solid black 1px;
+  border: solid black 1px; /*Le doy bordes y saco la viñeta de los li de beneficios clave que esta en index.html*/
   color: black;
 }
 
@@ -57,12 +123,6 @@ ul li {
   margin: 0 auto; /* Centra la imagen en su contenedor */
 }
 
-.beneficios-section {
-  border: solid black;
-  background-color: rgb(77, 175, 11);
-  margin-bottom: 30px;
-}
-
 .contenedor-ayuda {
   border: solid black;
 }
@@ -74,7 +134,6 @@ ul li {
 .imagen-ayuda {
   max-height: 400px;
 }
-
 
 .seccion-tienda {
   background-color: black;
