@@ -12,7 +12,7 @@
 
 <body>
 
-    <header class="navbar navbar-expand-lg bg-dark border-bottom text-center">
+    <header class="navbar navbar-expand-lg  border-bottom text-center">
         <div class="container d-flex align-items-center">
             <a class="navbar-brand" href="#">
                 <img class="logo-pc img-fluid" src="../img/logo-pc.jpg" alt="Logo de la tienda de PC">
@@ -60,13 +60,14 @@
 
     <main>
 
-        <section>
-            <h2 class="text-center text-black mt-5">Testimonios</h2>
-            <section class="container mt-5 seccion-testimonios-clientes">
+
+        <section class="container mt-5">
+            <h2 class="text-center text-black">Testimonios</h2>
+            <section class="mt-4 seccion-testimonios-clientes">
                 <h2 class="subtitulo-testimonios text-center mb-4">Lo que dicen nuestros clientes</h2>
                 <hr>
                 <section class="row">
-                    <div class="col-md-4 mb-4">
+                    <article class="col-md-4 mb-4">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">"¡Excelente servicio! Compré una tarjeta gráfica y llegó en
@@ -75,8 +76,8 @@
                                 <h5 class="card-title">- Juan Pérez</h5>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
+                    </article>
+                    <article class="col-md-4 mb-4">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">"La tienda tiene una gran variedad de componentes y los precios son
@@ -85,8 +86,8 @@
                                 <h5 class="card-title">- María López</h5>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
+                    </article>
+                    <article class="col-md-4 mb-4">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">"Recibí mi pedido rápidamente y todo funcionó a la perfección.
@@ -95,11 +96,10 @@
                                 <h5 class="card-title">- Carlos García</h5>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </section>
-
                 <section class="row">
-                    <div class="col-md-4 mb-4">
+                    <article class="col-md-4 mb-4">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">"Gran experiencia de compra. El sitio es fácil de navegar y
@@ -108,8 +108,8 @@
                                 <h5 class="card-title">- Ana Torres</h5>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
+                    </article>
+                    <article class="col-md-4 mb-4">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">"Los productos son de alta calidad y el envío fue muy rápido. Estoy
@@ -118,8 +118,8 @@
                                 <h5 class="card-title">- Luis Martínez</h5>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
+                    </article>
+                    <article class="col-md-4 mb-4">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">"Me encanta la variedad de productos que ofrecen. Siempre encuentro
@@ -128,16 +128,37 @@
                                 <h5 class="card-title">- Sofía Ramírez</h5>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </section>
-
                 <div class="text-center mt-5">
                     <h3>¿Quieres compartir tu experiencia?</h3>
                     <p>Nos encantaría saber lo que piensas. ¡Déjanos tu testimonio!</p>
-                    <a href="./testimonios.html" class="btn btn-dark mt-auto">Dejar Testimonio</a>
                 </div>
             </section>
         </section>
+
+        <section class="container d-flex justify-content-center align-items-center">
+            <section class="formulario-testimonios p-4 rounded">
+                <h2 class="text-center">Deja tu Testimonio</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="testimonial">Testimonio:</label>
+                        <textarea class="form-control" id="testimonial" rows="4"
+                            placeholder="Escribe tu testimonio aquí..." ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-block">Enviar Testimonio</button>
+                </form>
+            </section>
+        </section>
+
+
+
+
+
 
 
 
