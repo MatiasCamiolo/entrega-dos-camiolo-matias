@@ -104,8 +104,8 @@ h2 {
 }
 
 .img-prod {
-  width: 40%; /* La imagen ocupa el 50% de ancho del contenedor */
-  height: 300px; /* Todas las imagenes de los productos tienen una altura fija de 250px*/
+  width: 28%;
+  height: 200px; /* Todas las imagenes de los productos tienen una altura fija de 250px*/
   object-fit: cover; /* Se recortan las imagenes por igual*/
   margin: 0 auto; /* Centra la imagen en su contenedor */
 }
