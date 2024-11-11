@@ -13,18 +13,22 @@
 
 <body>
 
-    <header class="navbar navbar-expand-lg  border-bottom text-center">
-        <div class="container d-flex align-items-center">
+
+
+
+    <header class="navbar navbar-expand-lg border-bottom text-center">
+        <div class="container-fluid d-flex align-items-center">
             <a class="navbar-brand" href="#">
                 <img class="logo-pc img-fluid" src="./img/logo-pc.jpg" alt="Logo de la tienda de PC">
             </a>
-            <h1 class="mx-3">NextGen Gaming Gear</h1>
+            <h1 class="mx-3 text-center flex-grow-1">NextGen Gaming Gear</h1>
+            <!-- Título visible en todas las pantallas -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <nav class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto"> <!-- Menú alineado a la izquierda -->
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="./index.html">Inicio</a>
                     </li>
@@ -35,7 +39,7 @@
                         <a class="nav-link text-white" href="./pages/nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="./pages/ayuda.html">Ayuda</a>
+                        <a class="nav-link text-white" href="./pages/ayuda.html">Ayuda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="./pages/testimonios.html">Testimonios</a>
@@ -50,13 +54,20 @@
                                     target="_blank">Instagram</a></li>
                             <li><a class="dropdown-item" href="https://x.com/nvidia" target="_blank">X</a></li>
                             <li><a class="dropdown-item" href="https://www.facebook.com/NVIDIA"
-                                    target="_blank">Facebook</a></li>
+                                    target="_blank">Facebook</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+
+
+
+
+
+
 
     <main>
 
@@ -69,7 +80,8 @@
                 <div class="text-center">
                     <h2 class="fw-bold mt-5">Potencia tu PC con nuestros componentes de calidad</h2>
                     <hr>
-                    <p class="texto-nuestra-tienda fs-6 fw-bold">En nuestra tienda, encontrarás una amplia selección de componentes de PC de
+                    <p class="texto-nuestra-tienda fs-6 fw-bold">En nuestra tienda, encontrarás una amplia selección de
+                        componentes de PC de
                         alta
                         gama, desde tarjetas gráficas y procesadores hasta fuentes de poder y refrigeración. Cada
                         producto ha sido seleccionado para ofrecerte la mejor experiencia gaming y asegurar que tu
@@ -78,7 +90,7 @@
             </div>
         </section>
 
-        <section class="container mt-5 bg-dark">
+        <section class="container-de-productoss container mt-5 bg-dark">
             <h3 class="text-center mb-4 fs-2">Productos destacados</h3>
             <h4 class="text-center mb-4 fs-3 subtitulo-prod">Tarjetas Gráficas</h4>
             <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -150,7 +162,7 @@
         </section>
 
         <!-- Sección de Procesadores -->
-        <section class="container mt-5 bg-dark">
+        <section class="container-de-productoss container mt-5 bg-dark">
             <h4 class="text-center mb-4 fs-3 subtitulo-prod">Procesadores</h4>
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <!-- Producto 1: Procesador 1 -->
