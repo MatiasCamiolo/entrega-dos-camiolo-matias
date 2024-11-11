@@ -7,7 +7,7 @@ $color-dropdown-bg: green;
 $color-dropdown-item-hover: rgba(0, 0, 0, 0.103);
 $color-border: black;
 $color-ul-background: white;
-$color-subtitle-background: rgb(77, 175, 11);
+$color-subtitulo-background: rgb(77, 175, 11);
 $padding-small: 10px;
 $padding-medium: 15px;
 $margin-small: 5px;
@@ -53,12 +53,7 @@ a {
   border: none;
   cursor: pointer;
 
-  &.btn-primary {
-    background-color: $color-hover;
-    color: $color-text;
-
-    &:hover {
-      background-color: darken($color-hover, 10%);
-    }
+  &:hover {
+    background-color: darken($color-hover, 10%);
   }
 }
