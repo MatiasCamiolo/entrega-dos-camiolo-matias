@@ -19,7 +19,7 @@ $body-background: slategrey;
 
 .logo-pc {
   width: 20%;
-  height: 5%;
+  height: 10%;
   padding: 5px;
 }
 
@@ -130,7 +130,7 @@ body {
   }
 
   .img-prod {
-    width: 200%; 
+    width: 200%;
     height: 200px; // Todas las imágenes de los productos tienen una altura fija
     object-fit: cover; // Se recortan las imágenes por igual
     margin: 0 auto; // Centra la imagen en su contenedor
@@ -221,4 +221,16 @@ body {
 footer {
   border-top: solid;
   background-color: $color-subtitulo-background;
+}
+
+
+@media (max-width: 600px) {
+}
+
+
+@media (max-width: 768px) {
+}
+
+
+@media (min-width: 1024px) {
 }
