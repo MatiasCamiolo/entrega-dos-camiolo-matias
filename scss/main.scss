@@ -1,43 +1,63 @@
+// Definición de variables
+$color-background: #343a40;
+$color-text: #ffffff;
+$color-header-bg: rgba(0, 0, 0, 0.747);
+$color-hover: green;
+$color-dropdown-bg: green;
+$color-dropdown-item-hover: rgba(0, 0, 0, 0.103);
+$color-border: black;
+$color-ul-background: white;
+$color-subtitle-background: rgb(77, 175, 11);
+$padding-small: 10px;
+$padding-medium: 15px;
+$margin-small: 5px;
+$margin-medium: 12px;
+$margin-top-subtitle: 16px;
+$border-radius: 5px;
+$box-shadow: 0 2px 5px rgb(0, 0, 0);
+$body-background: slategrey;
+
+// Estilos del header
 header {
-  background-color: rgba(0, 0, 0, 0.747);
-  padding: 10px 0;
+  background-color: $color-header-bg;
+  padding: $padding-small 0;
   height: 150px;
 
   .navbar-toggler-icon {
-    background-color: white !important;
+    background-color: $color-text !important;
   }
 
   h1 {
-    color: white;
+    color: $color-text;
     font-weight: bold;
   }
 
   .navbar {
-    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    box-shadow: $box-shadow;
 
     .navbar-nav {
       margin-left: auto;
 
       .nav-item {
-        margin: 0 12px;
+        margin: 0 $margin-medium;
 
         .nav-link {
           display: inline-block;
-          padding: 10px 15px;
-          margin: 5px;
-          border-radius: 5px;
-          background-color: #343a40;
-          color: #ffffff;
+          padding: $padding-small $padding-medium;
+          margin: $margin-small;
+          border-radius: $border-radius;
+          background-color: $color-background;
+          color: $color-text;
           text-decoration: none;
           transition: background-color 0.3s, color 0.3s;
 
           &:hover {
-            background-color: green;
-            color: #343a40;
+            background-color: $color-hover;
+            color: $color-background;
           }
 
           &.active {
-            color: #343a40;
+            color: $color-background;
           }
         }
       }
@@ -45,30 +65,31 @@ header {
   }
 
   .dropdown-menu {
-    background-color: green;
+    background-color: $color-dropdown-bg;
 
     .dropdown-item {
-      color: white;
+      color: $color-text;
 
       &:hover {
-        background-color: rgba(0, 0, 0, 0.103);
+        background-color: $color-dropdown-item-hover;
       }
     }
   }
 }
 
+// Estilos del body
 body {
-  background-color: slategrey;
+  background-color: $body-background;
   font-family: Arial, Helvetica, sans-serif;
 
   h2 {
     border: solid black 2px;
-    background-color: rgb(77, 175, 11);
+    background-color: $color-subtitle-background;
     color: black;
   }
 
   .subtitulo-prod {
-    background-color: rgb(77, 175, 11);
+    background-color: $color-subtitle-background;
     border: solid black;
   }
 
@@ -93,41 +114,44 @@ body {
       transform: scale(1.05);
     }
   }
-}
 
-.img-prod {
-  width: 40%; // La imagen ocupa el 40% de ancho del contenedor
-  height: 300px; // Todas las imágenes de los productos tienen una altura fija de 300px
-  object-fit: cover; // Se recortan las imágenes por igual
-  margin: 0 auto; // Centra la imagen en su contenedor
-}
+  // Estilos de imágenes
+  .img-prod {
+    width: 40%; // La imagen ocupa el 40% de ancho del contenedor
+    height: 300px; // Todas las imágenes de los productos tienen una altura fija
+    object-fit: cover; // Se recortan las imágenes por igual
+    margin: 0 auto; // Centra la imagen en su contenedor
+  }
 
-.beneficios-section {
-  border: solid black;
-  background-color: rgb(77, 175, 11);
-  margin-bottom: 30px;
+  // Sección de beneficios
+  .beneficios-section {
+    border: solid black;
+    background-color: $color-subtitle-background;
+    margin-bottom: 30px;
 
-  ul {
-    li {
-      list-style: none;
-      border: solid black 1px;
-      color: black;
+    ul {
+      li {
+        list-style: none;
+        border: solid black 1px;
+        color: black;
+      }
     }
   }
-}
 
-.contenedor-ayuda {
-  border: solid black;
+  // Estilos para el contenedor de ayuda
+  .contenedor-ayuda {
+    border: solid 1px $color-border;
 
-  .div-ayuda-html {
-    background-color: whitesmoke;
-    color: black;
-    font-weight: bold;
-  }
+    .div-ayuda-html {
+      background-color: $color-background;
+      color: $color-text;
+      font-weight: bold;
+    }
 
-  .div-preg-frec {
-    ul {
-      background-color: white;
+    .div-preg-frec {
+      ul {
+        background-color: $color-ul-background;
+      }
     }
   }
 
@@ -135,6 +159,7 @@ body {
     max-height: 400px;
   }
 
+  // Sección de tienda
   .seccion-tienda {
     background-color: black;
     border: solid black;
@@ -155,14 +180,15 @@ body {
     font-size: 2rem;
   }
 
+  // Sección de testimonios de clientes
   .seccion-testimonios-clientes {
-    border: 6px solid black;
+    border: solid 6px $color-border;
     background-color: rgba(245, 245, 245, 0.233);
 
     .subtitulo-testimonios {
-      background-color: rgb(77, 175, 11);
+      background-color: $color-subtitle-background;
       width: 100%;
-      margin-top: 16px;
+      margin-top: $margin-top-subtitle;
     }
   }
 
@@ -177,11 +203,9 @@ body {
     margin-top: 50px;
     margin-bottom: 25px;
   }
-
 }
 
 footer {
   border-top: solid;
-  background-color: rgb(77, 175, 11);
+  background-color: $color-subtitle-background;
 }
-
