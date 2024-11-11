@@ -16,6 +16,7 @@ header .navbar-toggler-icon {
 header h1 {
   color: white;
   font-weight: bold;
+  text-align: center;
 }
 header .navbar {
   box-shadow: 0 2px 5px rgb(0, 0, 0);
