@@ -1,31 +1,25 @@
-.navbar-toggler-icon {
-  background-color: white !important;
-}
-
 header {
   background-color: rgba(0, 0, 0, 0.747);
   padding: 10px 0;
   height: 150px;
 }
-
-h1 {
+header .navbar-toggler-icon {
+  background-color: white !important;
+}
+header h1 {
   color: white;
   font-weight: bold;
 }
-
-.navbar {
+header .navbar {
   box-shadow: 0 2px 5px rgb(0, 0, 0);
 }
-
-.navbar-nav {
+header .navbar .navbar-nav {
   margin-left: auto;
 }
-
-.nav-item {
+header .navbar .navbar-nav .nav-item {
   margin: 0 12px;
 }
-
-.nav-link {
+header .navbar .navbar-nav .nav-item .nav-link {
   display: inline-block;
   padding: 10px 15px;
   margin: 5px;
@@ -35,25 +29,20 @@ h1 {
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }
-
-.nav-link:hover {
+header .navbar .navbar-nav .nav-item .nav-link:hover {
   background-color: green;
   color: #343a40;
 }
-
-.nav-link.active {
+header .navbar .navbar-nav .nav-item .nav-link.active {
   color: #343a40;
 }
-
-.dropdown-menu {
+header .dropdown-menu {
   background-color: green;
 }
-
-.dropdown-item {
+header .dropdown-menu .dropdown-item {
   color: white;
 }
-
-.dropdown-item:hover {
+header .dropdown-menu .dropdown-item:hover {
   background-color: rgba(0, 0, 0, 0.103);
 }
 
@@ -61,53 +50,37 @@ body {
   background-color: slategrey;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-h2 {
+body h2 {
   border: solid black 2px;
   background-color: rgb(77, 175, 11);
   color: black;
 }
-
-.logo-pc {
-  width: 80px;
-  padding: 5px;
-}
-
-.texto-nuestra-tienda {
-  color: black;
-  font-weight: bold;
-}
-
-.subtitulo-prod {
+body .subtitulo-prod {
   background-color: rgb(77, 175, 11);
   border: solid black;
 }
-
-.productos-tienda {
+body .productos-tienda {
   width: 45%;
   height: 250px;
   object-fit: cover;
   margin: 0 auto;
 }
-
-.fondo-articulo {
+body .fondo-articulo {
   background-color: black;
 }
-
-.fondo-articulo:hover {
+body .fondo-articulo:hover {
   transform: scale(1.05);
 }
-
-.btn-dark:hover {
+body .btn-dark:hover {
   background-color: #279b3a;
   transform: scale(1.05);
 }
 
 .img-prod {
-  width: 28%;
-  height: 200px; /* Todas las imagenes de los productos tienen una altura fija de 250px*/
-  object-fit: cover; /* Se recortan las imagenes por igual*/
-  margin: 0 auto; /* Centra la imagen en su contenedor */
+  width: 40%;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
 }
 
 .beneficios-section {
@@ -115,8 +88,7 @@ h2 {
   background-color: rgb(77, 175, 11);
   margin-bottom: 30px;
 }
-
-ul li {
+.beneficios-section ul li {
   list-style: none;
   border: solid black 1px;
   color: black;
@@ -125,52 +97,43 @@ ul li {
 .contenedor-ayuda {
   border: solid black;
 }
-
-.div-ayuda-html {
+.contenedor-ayuda .div-ayuda-html {
   background-color: whitesmoke;
   color: black;
   font-weight: bold;
 }
-
-.div-preg-frec ul {
+.contenedor-ayuda .div-preg-frec ul {
   background-color: white;
 }
-
-.imagen-ayuda {
+.contenedor-ayuda .imagen-ayuda {
   max-height: 400px;
 }
-
-.seccion-tienda {
+.contenedor-ayuda .seccion-tienda {
   background-color: black;
   border: solid black;
 }
-
-.div-de-cada-articulo {
+.contenedor-ayuda .div-de-cada-articulo {
   color: white;
 }
-
-.fondo-nosotros {
+.contenedor-ayuda .fondo-nosotros {
   width: 100%;
   max-height: 450px;
   margin-bottom: 12px;
 }
-
-.parrafo-nosotros-p {
+.contenedor-ayuda .parrafo-nosotros-p {
   font-weight: bold;
   font-size: 2rem;
 }
-
-.seccion-testimonios-clientes {
+.contenedor-ayuda .seccion-testimonios-clientes {
   border: 6px solid black;
   background-color: rgba(245, 245, 245, 0.233);
 }
-.subtitulo-testimonios {
+.contenedor-ayuda .seccion-testimonios-clientes .subtitulo-testimonios {
   background-color: rgb(77, 175, 11);
   width: 100%;
   margin-top: 16px;
 }
-
-.formulario-testimonios {
+.contenedor-ayuda .formulario-testimonios {
   background-color: rgba(245, 245, 245, 0.233);
   width: 70%;
   max-width: 900px;
@@ -186,3 +149,5 @@ footer {
   border-top: solid;
   background-color: rgb(77, 175, 11);
 }
+
+/*# sourceMappingURL=style.css.map */
